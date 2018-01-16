@@ -23,15 +23,11 @@ run <- function() {
         correlations[i, j] <- dcov$estimates[2]
         pvalues[i, j] <- dcov$p.value
         if (pvalues[i, j] < p_value) correlations[i, j] <- 0
-        #correlations[i, j] <- dcor(x=pc[,i], y=pc[,j], index=1.0)
      }
   }
-  #print(correlations);
   pc <<- as.matrix(correlations);
-  #pc <<- as.matrix(correlations$r);
   pc[is.na(pc)] <<- 0;
   empty <- c("");
-  #pc[which(correlations$P>p_value)] <<- 0;
 }
 
 output <- function(outputfile) {
