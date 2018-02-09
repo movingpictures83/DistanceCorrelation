@@ -2,6 +2,7 @@
 # Language: R
 # Input: CSV (abundances)
 # Output: CSV (correlation values) 
+# Tested with: PluMA 1.0, R 3.2.5
 
 PluMA plugin that computes Distance Correlation (Szekely, 2005) as an estimate of multivariate independence.
 Input is expected in the form of a CSV file.  Output will be a correlation matrix, also in CSV format,
