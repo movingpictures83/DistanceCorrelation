@@ -1,0 +1,2 @@
+Prefix plugins/DistanceCorrelation/example/
+Plugin DistanceCorrelation inputfile abundN.csv outputfile abundN.dcor.csv
