@@ -22,7 +22,7 @@ run <- function() {
         dcov = dcov.test(x=pc[,i], y=pc[,j], index=1.0, R=199)
         correlations[i, j] <- dcov$estimates[2]
         pvalues[i, j] <- dcov$p.value
-        if (pvalues[i, j] < p_value) correlations[i, j] <- 0
+        #if (pvalues[i, j] < p_value) correlations[i, j] <- 0
      }
   }
   pc <<- as.matrix(correlations);
